@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box row data">
+            <div class="box1 col-md-2">
+                <img src="../logo.png" alt="">
+            </div>
+            <div class="col-md-3 data-umum">
+                <h3 id="data-nama">Full Name</h3>
+                <br>
+                <h6 id="data-role">Role</h6>
+                <br>
+                <button class="btn btn-primary" id="k" href="#">Edit</button>
+                <button class="btn" id="r" href="#">Resume</button>
+                <br><br>
+            </div>
+            <div class="col-md-3 daftar-data">
+                <p>Avaibility</p>
+                <p>Usia</p>
+                <p>Lokasi</p>
+                <p>Pengalaman</p>
+                <p>Email</p>
+            </div>
+            <div class="col-md-3 data-khusus">
+                <p id="data-avail">-</p>
+                <p id="data-age">-</p>
+                <p id="data-lokasi">-</p>
+                <p id="data-years">-</p>
+                <p id="data-email">-</p>
+            </div>
+        </div>
+        <div class="box2">
+            <form onsubmit="return false">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <br>
+                    <input class="form-control" type="text" name="nama" id="nama">
+                </div>
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <br>
+                    <input class="form-control" type="text" name="role" id="role">
+                </div>
+                <div class="form-group">
+                    <label for="avail">Avaibility</label>
+                    <br>
+                    <input class="form-control" type="text" name="avail" id="avail">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <br>
+                    <input class="form-control" type="text" name="age" id="age">
+                </div>    
+                <div class="form-group">
+                    <label for="lokasi">Lokasi</label>
+                    <br>
+                    <input class="form-control" type="text" name="lokasi" id="lokasi">
+                </div>    
+                <div class="form-group">
+                    <label for="year">Years Experience</label>
+                    <br>
+                    <input class="form-control" type="text" name="years" id="years">
+                </div>    
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <br>
+                    <input class="form-control" type="text" name="email" id="email">
+                    <br>
+                </div>    
+                <input type="submit" id="sb" value="SUBMIT" onclick="Proses()">
+            </form>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
